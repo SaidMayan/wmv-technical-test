@@ -9,31 +9,46 @@
 <section class="featured-collection" data-section-id="{{ section.id }}" data-section-type="featured-collection">
   {%- assign collection = collections[section.settings.collection] -%}
 
-  <h2>{{ collection.title | escape }}</h2>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <h2 class="heading-2">{{ collection.title | escape }}</h2>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <p class="our-perfected-jeans">{{ collection.description }}</p>
+  </div>
 
-  <p>{{ collection.description }}</p>
-
+  <div class="featured-collection-products carousel"  data-flickity='{ "groupCells": true, "percentPosition": false }'>
   {% for product in collection.products limit: 6 %}
+  <div class="carousel-cell">
     {% assign current_variant = product.selected_or_first_available_variant %}
-  
     <a href="{{ product.url | within: collection }}">
-      <div>
+      <div class="bitmap">
         {% if product.featured_image != blank %}
           {{ product.featured_image | img_url: 'large' | img_tag }}
         {% endif %}
         
-        <span js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
+
+        <div class="add-to-cart-hover">
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <div class="add-to-cart-collection-page" style="display: flex; align-items: center; justify-content: center;">
+            <span js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
+          </div>
+        </div>
+        </div>
+
       </div>
 
-      <div>
-        <p>{{ product.title | escape }}</p>
+      <div class="product-title-price-parent">
+        <p class="product-title">{{ product.title | escape }}</p>
 
-        <span>
+        <span class="product-price">
           {% include 'product-price' %}
         </span>
       </div>
     </a>
+  </div>
   {% endfor %}
+  </div>
+
 </section>
 
 {% schema %}

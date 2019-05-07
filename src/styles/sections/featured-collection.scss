@@ -5,5 +5,175 @@
  *
  */
 .featured-collection {
-  
+    text-decoration: none;
 }
+.heading-2  {
+    height: 48px;
+    width: 303px;
+    color: #003366;
+    font-family: "Helvetica Neue";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 49px;
+    text-align: center;
+}
+@media only screen and (max-width: 749px) {
+    .heading-2  {
+        height: 33px;
+        width: 212px;
+        color: #003366;
+        font-family: "Helvetica Neue";
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 34px;
+        text-align: center;
+    }
+  }
+.our-perfected-jeans {
+    height: 79px;
+    width: 611px;
+    color: #9B9B9B;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+}
+@media only screen and (max-width: 749px) {
+    .our-perfected-jeans {
+        height: 95px;
+        width: 284px;
+        color: #9B9B9B;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px;
+        text-align: center;
+    }
+  }
+.bitmap > img {
+    display: block;
+    max-height: 480px;
+    max-width: 306px;
+    width: 100%;
+    // padding: 0px 25px;
+}
+@media only screen and (max-width: 749px) {
+    .bitmap > img {
+        max-height: 446px;
+        max-width: 284px;
+        width: 100%;
+    }    
+  }
+.featured-collection-products {
+    max-height: 619px;
+    max-width: 1390px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-column-gap: 50px;
+    // padding: 50px;
+    
+}
+@media only screen and (max-width: 749px) {
+    .featured-collection-products {
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // padding: 50px;
+    }
+  }
+.carousel-cell {
+    width: 25%;
+    margin-right: 10px;
+    // position: absolute;
+    // right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 749px) {
+    .carousel-cell {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+.product-title {
+    height: 50px;
+    width: 306px;
+    color: #003366;
+    font-family: "Helvetica Neue";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+    bottom: 50px;
+}
+@media only screen and (max-width: 749px) {
+    .product-title {
+        height: 44px;
+        width: 230px;
+        color: #003366;
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+    }
+  }
+.product-title-price-parent span {
+    height: 26px;
+    width: 66px;
+    color: #9B9B9B;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+    bottom: 65px;
+}
+@media only screen and (max-width: 749px) {
+    .product-title-price-parent span {
+        height: 18px;
+        width: 56px;
+        color: #9B9B9B;
+        font-family: "Helvetica Neue";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+  }
+.flickity-slider {
+    left: -90px !important;
+}
+@media only screen and (max-width: 749px) {
+    .flickity-slider {
+        left: 0px !important;
+    }
+  }
+  .add-to-cart-collection-page {
+    height: 47px;
+    width: 270px;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 100px;
+    // visibility: hidden;
+  }
+  .add-to-cart-collection-page span {
+    height: 22px;
+    width: 96px;
+    color: #003366;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
